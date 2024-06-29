@@ -2,41 +2,25 @@ import { Wrapper } from './style';
 
 import { Link } from 'react-router-dom';
 
-import Button from 'components/common/Button';
-
-import { authStore } from 'services/store/auth';
-
-import { ROUTES } from 'utils/constants/routes';
-
 const Header = () => {
-  const {
-    actions: { authFail }
-  } = authStore((state) => state);
-
-  const onLogout = () => {
-    authFail();
-  };
-
   return (
     <>
       <Wrapper>
-        <div className="left">
-          <a href="javascript:void(0)" className="logo">
+        <div className="header">
+          <Link to="/task-board" className="logo">
             <img src="/public/icons/logo.svg" alt="logo" />
-          </a>
+          </Link>
           <ul>
             <li>
-              <Link to={ROUTES.home}>Home</Link>
+              <Link to="/task-board">Task Board</Link>
             </li>
             <li>
-              <Link to={ROUTES.reactQueryDemo}>User List</Link>
+              <Link to="/developers">Developers</Link>
+            </li>
+            <li>
+              <Link to="/new-task">New Task</Link>
             </li>
           </ul>
-        </div>
-        <div className="right">
-          <Button variant="primary" type="button" onClick={onLogout}>
-            Logout
-          </Button>
         </div>
       </Wrapper>
     </>

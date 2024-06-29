@@ -7,10 +7,7 @@ import GlobalStyle from 'style/global';
 import { ErrorBoundary } from '../components/common/Error';
 import { LoaderWrapper } from 'components/common/loader';
 
-import { setupAxios } from '../utils/functions';
 import Routes from './routes';
-
-setupAxios();
 
 const queryClient = new QueryClient();
 

@@ -1,13 +1,26 @@
 {
-  "tasks": [],
+  "tasks": [
+    {
+      "id": "1e20",
+      "title": "ndfbwkubfukbwukbfukbw",
+      "status": "Archived",
+      "createdAt": "2024-06-29T02:46:21.847Z",
+      "updatedAt": "2024-06-29T02:52:39.220Z",
+      "developerId": "1"
+    }
+  ],
   "developers": [
     {
-      "id": 1,
-      "username": "dev1"
+      "id": "1",
+      "username": "Alice"
     },
     {
-      "id": 1,
-      "username": "dev2"
+      "id": "2",
+      "username": "Bob"
+    },
+    {
+      "id": "3",
+      "username": "Charlie"
     }
   ]
 }

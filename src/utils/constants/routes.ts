@@ -1,7 +1,7 @@
 export const ROUTES = {
   default: `/`,
-  signIn: `/signIn`,
-  home: `/home`,
-  reactQueryDemo: `/react-query-demo`,
+  taskBoard: `/task-board`,
+  developers: `/developers`,
+  taskForm: `/new-task`,
   dynamicPath: (path: string) => `/static-path/${path}`
 };

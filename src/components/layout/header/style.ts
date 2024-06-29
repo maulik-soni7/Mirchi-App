@@ -3,25 +3,29 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 30px 30px;
-  background-color: blanchedalmond;
+  padding: 20px 30px;
+  background-color: #fff;
 
-  .left {
+  .header {
     display: flex;
+    align-items: center;
     .logo {
-      width: 160px;
+      display: inline-block;
       height: 40px;
-      img{
+      margin-right: 80px;
+      img {
         width: 100%;
         height: 100%;
       }
     }
-    h2 {
-      margin-right: 20px;
-    }
     ul {
       display: flex;
-      gap: 20px;
+      gap: 30px;
+      li a{
+        font-size: 16px;
+        font-weight: 500;
+        color: #3fa2f6;
+      }
     }
   }
 `;
